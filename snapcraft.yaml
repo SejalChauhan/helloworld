@@ -1,0 +1,16 @@
+name: hello-world
+version: 1
+
+vendor: Sejal Chauhan <tia747@gmail.com>
+summary: First snappy app
+description: Prints helloworld
+icon: icon.png
+
+parts:
+    helloworld:
+        plugin: python3
+        source: git://github.com/SejalChauhan/helloworld
+    helloworld:
+        plugin: copy
+        files:
+            helloworld.py: bin/helloworld
